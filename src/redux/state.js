@@ -1,3 +1,7 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST = 'UPDATE-NEW-POST';
+
+
 let store = {
   _state: {
     posts: [
@@ -32,7 +36,7 @@ let store = {
     this._rerender = observer;
   },
   dispatch(action) {
-    if (action.type === "ADD-POST") {
+    if (action.type === ADD_POST) {
       let newPost = {
         message: this._state.newTextPost,
         user: "Unknown User",
@@ -43,12 +47,24 @@ let store = {
       this._state.posts.push(newPost);
       this._state.newTextPost = "";
       this._rerender(this._state);
-    } else if (action.type === "UPDATE-NEW-POST") {
+    } else if (action.type === UPDATE_NEW_POST) {
       this._state.newTextPost = action.newPost;
       this._rerender(this._state);
     }
   },
 };
+
+export const addPostActionCreator =() => {
+    return {
+        type: ADD_POST
+    }
+}
+export const updateNewPostActionCreator =(text) => {
+    return {
+        type: UPDATE_NEW_POST,
+        newPost: text
+    }
+}
 
 window.store = store;
 
