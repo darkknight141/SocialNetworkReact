@@ -1,0 +1,7 @@
+.titleName{
+    grid-area: title;
+    padding-left: 35px;
+    font-size: 26px;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }

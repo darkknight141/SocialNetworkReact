@@ -1,0 +1,9 @@
+.search{
+    grid-area: search;
+    
+  }
+  .search img{
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  

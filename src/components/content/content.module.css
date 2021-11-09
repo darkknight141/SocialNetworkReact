@@ -1,0 +1,32 @@
+.content{
+    grid-area: cont;
+    border-right: 1px solid grey;
+  }
+  .backgrprof img{
+    padding-top: 0px;
+    width: 705px;
+    height: 50%;
+  }
+  .photo{
+    position: absolute;
+    top:390px;
+    left:320px;
+    border-radius: 50%;
+    border: 3px solid black;
+    width: 150px;
+  }
+  .description{
+    padding-top: 50px;
+  }
+  .name{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+  }
+  .nickname{
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 35px;
+  }
