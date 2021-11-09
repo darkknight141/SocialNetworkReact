@@ -14,7 +14,7 @@ function Content(props){
             <p className={s.nickname}>@unknownuser99</p>
         </div>
     </div>
-    <MyPosts posts={props.posts} addPost={props.addPost} updateText={props.updateText} newTextPost={props.newTextPost}></MyPosts>
+    <MyPosts posts={props.posts} dispatch={props.dispatch} newTextPost={props.newTextPost}></MyPosts>
   </div>
   );
 }

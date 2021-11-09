@@ -16,7 +16,7 @@ function App(props) {
       <Seacrh/>
       <Nav/>
       <Routes>
-        <Route path='/profile' element={<Content posts={props.state.posts} addPost={props.addPost} updateText={props.updateText}/>}/>
+        <Route path='/profile' element={<Content posts={props.state.posts} dispatch={props.dispatch} />}/>
         <Route path='/messages' element={<Dialogs />}/>
         <Route path='/music' element={<Music/>}/>
         <Route path='/news' element={<News/>}/>
