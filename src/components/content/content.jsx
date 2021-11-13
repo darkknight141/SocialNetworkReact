@@ -1,7 +1,9 @@
 import s from './content.module.css'
 import MyPosts from './Wall/MyPost'
+import MyPostsContainer from './Wall/MyPostContainer';
 
 function Content(props){
+    // console.log(props)
     return(
     <div className={s.content}>
     <div className={s.backgrprof}>
@@ -14,7 +16,7 @@ function Content(props){
             <p className={s.nickname}>@unknownuser99</p>
         </div>
     </div>
-    <MyPosts posts={props.posts} dispatch={props.dispatch} newTextPost={props.newTextPost}></MyPosts>
+    <MyPostsContainer store={props.store}/>
   </div>
   );
 }

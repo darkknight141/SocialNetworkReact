@@ -1,0 +1,21 @@
+.messages{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    border-right: 1px solid grey;
+  }
+.user{
+  padding: 40px;
+}
+.message{
+  padding: 40px;
+}
+.item{
+  text-decoration: none;
+  color: white;
+}
+.useritem{
+  margin-bottom: 25px;
+}
+.messageitem{
+  margin-bottom: 25px;
+}
