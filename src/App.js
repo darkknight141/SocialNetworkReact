@@ -8,6 +8,7 @@ import News from './components/news/news';
 import Settings from './components/settings/settings'
 import {BrowserRouter, Routes,Route} from 'react-router-dom';
 import DialogsContainer from './components/messages/dialogsContainer';
+import TitleNameSearch from './components/titleSearchName/titleSearch';
 
 function App(props) {
   return (
@@ -23,6 +24,7 @@ function App(props) {
         <Route path='/settings' element={<Settings/>}/>
       </Routes>
       <Titlename/>
+      <TitleNameSearch/>
     </div>
     </BrowserRouter>
   );
