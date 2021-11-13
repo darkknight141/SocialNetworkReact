@@ -16,7 +16,7 @@ function Content(props){
             <p className={s.nickname}>@unknownuser99</p>
         </div>
     </div>
-    <MyPostsContainer store={props.store}/>
+    <MyPostsContainer/>
   </div>
   );
 }

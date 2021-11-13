@@ -16,8 +16,8 @@ function App(props) {
       <Seacrh/>
       <Nav/>
       <Routes>
-        <Route path='/profile' element={<Content store={props.store} />}/>
-        <Route path='/messages' element={<DialogsContainer store={props.store} />}/>
+        <Route path='/profile' element={<Content/>}/>
+        <Route path='/messages' element={<DialogsContainer/>}/>
         <Route path='/music' element={<Music/>}/>
         <Route path='/news' element={<News/>}/>
         <Route path='/settings' element={<Settings/>}/>
