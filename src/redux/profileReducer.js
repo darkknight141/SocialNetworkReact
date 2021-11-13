@@ -34,16 +34,17 @@ const profileReducer = (state = initialState, action) => {
         nickname: "@unknownuser99",
         scr: "https://yt3.ggpht.com/a/AATXAJwiglRIge7WBIk1SHb7xAO8GroQnb2i4XlJ9b-P=s900-c-k-c0x00ffffff-no-rj",
       };
-      let stateCopy = { ...state };
-      stateCopy.posts = [...state.posts];
-      stateCopy.posts.push(newPost);
-      stateCopy.newTextPost = "";
-      return stateCopy;
+      return {
+          ...state,
+          newTextPost:'',
+          posts:[...state.posts, newPost],
+      };
     }
     case UPDATE_NEW_POST: {
-      let stateCopy = { ...state };
-      stateCopy.newTextPost = action.newPost;
-      return stateCopy;
+      return {
+          ...state,
+          newTextPost:action.newPost
+      };
     }
     default:
       return state;
