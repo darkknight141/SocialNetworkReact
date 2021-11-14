@@ -1,5 +1,4 @@
 import s from './content.module.css'
-import MyPosts from './Wall/MyPost'
 import MyPostsContainer from './Wall/MyPostContainer';
 
 function Content(props){
