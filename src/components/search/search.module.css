@@ -12,3 +12,39 @@
   border-right: 1px solid grey;
   border-bottom: 1px solid grey;
 }
+.inputsearch {
+  margin: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 80px;
+  border-radius: 15px;
+}
+.users{
+  margin-top: 15px;
+
+}
+.useritem{
+  margin-top: 15px;
+}
+.photo {
+  border-radius: 50%;
+  width: 70px;
+  height: 60px;
+  margin-left: 15px;
+}
+.info{
+  margin-left: 100px;
+  margin-top: -75px;
+}
+.follow{
+  border-radius: 10px;
+  margin-left: 15px;
+  padding-right: 25px;
+  border: none;
+  background-color: rgba(0,212,255,1);
+  transition-duration:0.4s;
+}
+.follow:hover{
+  filter:brightness(0.8);
+  transition-duration:0.4s;
+}
