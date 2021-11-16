@@ -27,17 +27,19 @@
   margin-top: 15px;
 }
 .photo {
-  border-radius: 50%;
-  width: 70px;
-  height: 60px;
+  border-radius: 25px;
+  width: 80px;
+  height: 80px;
   margin-left: 15px;
+  margin-top: 10px;
 }
 .info{
-  margin-left: 100px;
-  margin-top: -75px;
+  margin-left: 110px;
+  margin-top: -70px;
 }
 .follow{
   border-radius: 10px;
+  margin-top: 15px;
   margin-left: 15px;
   padding-right: 25px;
   border: none;
@@ -47,4 +49,12 @@
 .follow:hover{
   filter:brightness(0.8);
   transition-duration:0.4s;
+}
+.flname{
+  margin-top: -5px;
+}
+.nickname{
+  color: rgb(110, 118, 125);
+  font-size: 13px;
+  font-weight: 300;
 }
