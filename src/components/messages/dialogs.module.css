@@ -1,5 +1,6 @@
 .messages{
     display: grid;
+    grid-area: cont;
     grid-template-columns: 2fr 10fr;
     border-right: 1px solid grey;
   }
