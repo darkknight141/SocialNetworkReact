@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { followActionCreator, setUsersActionCreator } from '../../redux/searchReducer';
 import { unfollowActionCreator } from './../../redux/searchReducer';
 import User from './user';
+import Users from './searchС';
 
 let mapStateToProps =(state) =>{
     return{ 
@@ -26,4 +27,4 @@ let mapDispatchToProps =(dispatch)=>{
 }
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(Search);
+export default connect(mapStateToProps,mapDispatchToProps)(Users);
