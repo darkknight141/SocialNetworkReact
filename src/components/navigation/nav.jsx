@@ -3,7 +3,9 @@ import style from'./nav.module.css';
 
 function Nav(){
   let activeStyle={
-    color : "rgba(0,212,255,1)"
+    color : "rgba(0,212,255,1)",
+    transition: "0.8s",
+    
   };
     return(
     <nav className={style.nav}>
